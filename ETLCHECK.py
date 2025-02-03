@@ -23,7 +23,7 @@ def send_to_teams(message):
     response = requests.post(webhook_url, json=payload, headers=headers)
 
     if response.status_code == 200:
-        print("Message sent successfully!")
+        print("Message sent successfully!!")
     else:
         print(f"Failed to send message. Status code: {response.status_code}")
 
