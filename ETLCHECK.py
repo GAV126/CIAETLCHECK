@@ -51,7 +51,7 @@ def check_csv_files():
             if modified_time < threshold_time:
                 issues.append((file_name, modified_time))
 
-    # Notify through MS Teams
+    # Notify through MS Teams channel (not to personal account)
     if issues:
         message = "The following files were not updated within the last 30 minutes:\n"
         for file_name, modified_date in issues:
